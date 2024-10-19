@@ -1,0 +1,33 @@
+# Dependencies
+fastapi>=0.115.0
+faster-whisper>=1.0.3
+huggingface-hub>=0.25.1
+numpy>=2.1.1
+pydantic-settings>=2.5.2
+pydantic>=2.9.0
+python-multipart>=0.0.10
+soundfile>=0.12.1
+uvicorn>=0.30.6
+
+# Client
+keyboard>=0.13.5
+
+# Dev
+anyio>=4.4.0
+basedpyright>=1.18.0
+pytest-antilru>=2.0.0
+mkdocs-material>=9.5.39
+mkdocstrings[python]>=0.26.1
+pytest-asyncio>=0.24.0
+pytest-xdist>=3.6.1
+pytest>=8.3.3
+ruff>=0.5.3
+srt>=3.5.3
+webvtt-py>=0.5.1
+pre-commit>=4.0.1
+
+# UI
+gradio>=5.0.2
+httpx>=0.27.2
+httpx-sse>=0.4.0
+openai>=1.48.0
