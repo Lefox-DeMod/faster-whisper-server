@@ -10,16 +10,25 @@ See [OpenAI API reference](https://platform.openai.com/docs/api-reference/audio)
         LocalAgreement2 (paper | original implementation) algorithm is used for live transcription.
         Only transcription of a single channel, 16000 sample rate, raw, 16-bit little-endian audio is supported.
 
-> [!NOTE]
-> This repoository includes cudnn and cuBLAS libraries for linux at: `./whisper-server/src/cudnn/`
-> cuBLAS for CUDA 12
-> cuDNN 8 for CUDA 12
-
 # Installation for linux
 1. Clone the repository
 ```git clone https://github.com/Lefox-DeMod/faster-whisper-server```
 2. Go to  folder `cd ./faster-whisper-server` and run `source venv/bin/activate`
 3. Run pip to run install from `requirements.txt`: `pip install -r requirements.txt`
+4. Download cudnn and cublast libraries for work Whisper:
+* [cuBLAS for CUDA 12](https://developer.nvidia.com/cudnn)
+* [cuDNN 8 for CUDA 12](https://developer.nvidia.com/cublas)
+
+Unpack this libraries to `./whisper-server/src/cudnn` folder. Create cudnn folder before extract libraries
+  Example:
+```
+* src/cudnn/libcublas.so.12
+* src/cudnn/libcublasLt.so.12
+* src/cudnn/libcudnn_cnn_infer.so.8
+* src/cudnn/libcudnn_ops_infer.so.8
+```
+  
+   
 
 # Usage
 To run whisper-server: `./run-whisper-server.sh`
