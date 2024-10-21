@@ -13,9 +13,10 @@ See [OpenAI API reference](https://platform.openai.com/docs/api-reference/audio)
 # Installation for linux
 1. Clone the repository
 ```git clone https://github.com/Lefox-DeMod/faster-whisper-server```
-2. Go to  folder `cd ./faster-whisper-server` and run `source venv/bin/activate`
-3. Run pip to run install from `requirements.txt`: `pip install -r requirements.txt`
-4. Download cudnn and cublast libraries for work Whisper:
+2. Go to  folder `cd ./faster-whisper-server` and run `python -m venv ./venv` to create python virtual enviroment
+3. run `source venv/bin/activate`
+4. Run pip to run install from `requirements.txt`: `pip install -r requirements.txt`
+5. Download cudnn and cublast libraries for work Whisper:
 * [cuBLAS for CUDA 12](https://developer.nvidia.com/cudnn)
 * [cuDNN 8 for CUDA 12](https://developer.nvidia.com/cublas)
 
