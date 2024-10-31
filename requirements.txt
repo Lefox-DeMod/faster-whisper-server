@@ -8,6 +8,7 @@ pydantic>=2.9.0
 python-multipart>=0.0.10
 soundfile>=0.12.1
 uvicorn>=0.30.6
+ctranslate2==4.4.0 # Fix for cudNN 8 compatibility
 
 # Client
 keyboard>=0.13.5
