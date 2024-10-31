@@ -34,6 +34,10 @@ Unpack this libraries to `./whisper-server/src/cudnn` folder. Create cudnn folde
 # Usage
 To run whisper-server: `./run-whisper-server.sh`
 
+> [!WARNING]
+> Library [ctranslate2 was updated to version 4.5.0](https://github.com/m-bain/whisperX/issues/901#issuecomment-2431935668), which uses cuDNN 9.2 but faster-whisper does not support.
+> You may need manual fix, use: ```pip install ctranslate2==4.4.0``` in virtual venv: ```source venv/bin/activate```
+
 # Integration with Open WebUI
 1. Go to admin panel of OpenWebUI and select audio settings
 2. Select STT (speech to text) and switch OpenAI
